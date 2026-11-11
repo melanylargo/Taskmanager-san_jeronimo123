@@ -16,18 +16,22 @@ export class User {
 
     constructor({
         id = null,
-        INSTITUCION,
+        Institucion_Educativa,
         name,
+        Tipo_de_usuario,
         genero,
         email,
-        passwordHash = null
+        passwordHash = null,
+        check,
     }) {
         this.id = id;
-        this.INSTITUCION = INSTITUCION;
+        this.Institucion_Educativa =Institucion_Educativa;
         this.name = name;
+        this.Tipo_de_usuario=Tipo_de_usuario;
         this.genero = genero;
         this.email = email;
         this.passwordHash = passwordHash;
+        this.check=check;
     }
 
 }
